@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Dancing+Script:wght@700&display=swap');
+
+body {
+background-color: rgb(240, 198, 204);
+}
+
+.heading {
+    text-align: center;
+    color: rgb(117, 104, 88);
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    position: relative; /*top-right-bottom-left*/
+    animation: header;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+   /* animation-iteration-count: infinite;*/
+}
+
+@keyframes header {
+    0% {top: -200px}
+    100% {top: 20px}
+}
+
+.ingridients {
+    border: 1px solid black;
+width: 50%;
+margin: 0 auto;
+padding-top: 70px;
+padding-bottom: 30px;
+
+}
+.ingridients-table {
+border: 1px solid black;
+margin-left: 12rem;
+width: 50%;
+position: relative;
+animation: textLeft;
+animation-duration: 3s;
+animation-timing-function: ease-in-out;
+}   
+
+@keyframes textLeft {
+0% {left: -1000px;}
+85% {left: 50px;}
+100% {left: 0;}
+}
+
+
+.instructions {
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+.instructions ol {
+    margin: 1rem;
+    width: 75%;
+}
+
+.instructions-heading {
+    margin: 0 auto;
+    color: rgb(117, 104, 88);
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+
+.picture{
+margin-left: 5rem;
+margin-top: 1rem;
+
+}
+
+.footer {
+    text-align: center;
+}
+.btn {
+    opacity: 0;
+    border: 2px solid rgb(153, 120, 140);
+    color: rgb(105, 56, 80);
+    font-size: 2rem;
+    font-family: 'Crimson Text', serif;
+display: inline-block;
+margin: 2rem;
+padding: 1rem;
+text-decoration: none;
+text-transform: uppercase;
+animation: aniBtn;
+animation-duration: 5s;
+animation-delay: 2s;
+animation-fill-mode: forwards;
+}    
+
+@keyframes aniBtn {
+    0% {opacity: 0;} /*o - 1*/
+    100% {opacity: 1;}
+}    
